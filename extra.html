@@ -1,0 +1,17 @@
+<h4 id="text-area">My new condut inshaallh very well</h4>
+<br>
+<textarea name="" id="new-comment" cols="60" rows="5"></textarea>
+<br>
+<br>
+<button id="btn-post">Post</button>
+
+<script>
+   document.getElementById('btn-post').addEventListener('click',function () {
+       const newComment = document.getElementById('new-comment')
+       // console.log(newComment);
+       const textArea = newComment.value;
+       const h4 = document.getElementById('text-area');
+       h4.innerText = textArea;
+       newComment.value = '';
+   })
+</script>

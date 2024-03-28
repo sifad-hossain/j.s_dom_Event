@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events</title>
+</head>
+<body>
+    <h1>Explore More Events</h1>
+    <button id="btn-more">Events</button>
+    <input id="text-filed" type="text">
+
+    <script>
+        // document.getElementById('text-filed').addEventListener('focus', function () {
+        //     console.log('Event triggered inside');
+        // });
+
+        // document.getElementById('text-filed').addEventListener('blur', function () {
+        //     console.log('Event triggered inside blur');
+        // });
+
+        // document.getElementById('text-filed').addEventListener('keydown', function (event) {
+        //     console.log(event);
+        // });
+
+        // document.getElementById('text-filed').addEventListener('keydown', function (event) {
+        //     console.log(event.target);
+        // });
+
+        // document.getElementById('text-filed').addEventListener('keydown', function (event) {
+        //     console.log(event.target.value);
+        // });
+
+
+        // document.getElementById('text-filed').addEventListener('keypress', function (event) {
+        //     console.log(event.target.value);
+        // });
+
+        document.getElementById('text-filed').addEventListener('keyup', function (event) {
+            console.log(event.target.value);
+        });
+
+
+        document.getElementById('btn-more').addEventListener('mousemove', function () {
+            console.log('Event Triggered');
+        })
+    </script>
+</body>
+</html>
